@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"> 
-    <script src="login.js"></script>
+    <script src="scripts.js"></script>
     <title>Viola's Website</title>
 </head>
 
@@ -12,16 +12,16 @@
 </div>
 
 <div class="login flex">
-<form class="login-form">
+<form id="login-form" method="post">
     <img src="img/login.png" alt="login"/><br/>
 
     <label for="username"><b>Emri i p&euml;rdoruesit:</b> </label><br/>
-    <input type="text" placeholder="Vendosni emrin tuaj" name="username" required/><br/><br/>
+    <input type="text" placeholder="Vendosni emrin tuaj" id="username" required/><br/><br/>
 
     <label for="password"><b>Fjal&euml;kalimi: </b></label><br/>
-    <input type="password" placeholder="Vendosni fjal&euml;kalimin tuaj" name="password" required />
+    <input type="password" placeholder="Vendosni fjal&euml;kalimin tuaj" id="password" required /><br/><br/>
 
-    <button type="submit">Hyr</button>
+    <button type="button" value="Hyr" onclick="handleLogin()">Hyr</button>
 	<p class="link">Nuk jeni i regjistruar? <a href="registration.html">Kliko k&euml;tu</a></p>
 </form>
 </div>

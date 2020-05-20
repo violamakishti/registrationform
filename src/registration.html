@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="scripts.js"></script>
+    <title>Registration Form | Viola's Website</title>
+</head>
+<link rel="stylesheet" type="text/css" href="file.css"/>
+</head>
+<body>
+<div class="header">
+<p class="welcome"><span>Mir&euml;sevini n&euml; faqen time</span></p>
+<p class="welcome-text">Kjo faqe &euml;sht&euml; krijuar si detyr&euml; portofoli p&euml;r l&euml;nd&euml;n e TIK</p>
+</div>
+<h1 align="center">Regjistrimi</h1>
+<div  class="registration flex">
+<form align="center">
+  <fieldset>
+    <legend>T&euml; dh&euml;na personale:</legend>
+    <br>Emri:
+    <input type="text" name="emri" placeholder="Emri juaj" required>
+    </br>
+    <br>Mbiemri:
+    <input type="text" name="mbiemri" placeholder="Mbiemri juaj" required>
+    </br>
+	<br>E-Mail:
+	<input type="email" placeholder="Adresa e email-it" required>
+    </br>
+	<br>Tel/Cel:
+	<input type="phone" type="tel" placeholder="Nr. tel apo cel" required>
+	</br>
+	<br>Gjinia: 
+		<input type="radio" name="gjinia" value="mashkull"> Mashkull
+		<input type="radio" name="gjinia" value="femer"> Fem&euml;r</br>
+	<br>Viti shkollor
+			<select>
+  <option value="1" selected>Viti i par&euml;</option>
+  <option value="2">Viti i dyt&euml; </option>
+  <option value="3">Viti i tret&euml;</option>
+</select>
+</br>
+<br>Komente:
+   <textarea placeholder="Shkruani komentin tuaj"rows="4" cols="25" name="comment"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Kredencialet:</legend>
+ <label for="username"><b>Emri i p&euml;rdoruesit:</b> </label><br/>
+    <input type="text" placeholder="Vendosni emrin tuaj" id="username" required /><br/><br/>
+
+    <label for="password"><b>Fjal&euml;kalimi: </b></label><br/>
+    <input type="password" placeholder="Vendosni fjal&euml;kalimin tuaj" id="password" required /><br/><br/>
+  
+  </fieldset>
+  
+	<button type="button" onclick="handleRegistration();">Regjistrohu</button>
+	<button type="button" value="Kthehu" onclick="history.back(-1)">Kthehu</button>
+</form>
+</div>
+
+</body>
+</html>
