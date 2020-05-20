@@ -7,20 +7,58 @@
 .welcome > span{
     background-color:#000;
     color:#ffff;
+	font-size: 60px;
     display:inline-block;
     padding-left:8px;
     padding-right:8px;
     text-align:center;
 }
 
-.login-form{
-    background-color: #d6cbd3;
-    text-align: center;
+.welcome-text{
+	font-size: 30px;	
 }
+
+.login.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  padding: .5rem;
+  height: 400px;
+  color: #84613D;
+}
+
+.link{
+	font-size: 20px;
+}
+
+.login form {
+  width: 400px;
+  font-size: 26px;
+  text-align: center;
+  background: #ada397;
+  margin: .25rem;
+  padding: .25rem;
+}
+.login input {
+	margin-top: 20px;
+	height: 30px;
+	font-size: 14px;
+	
+}
+
+img{
+	margin-bottom: 0;
+	width: 100px;
+	height: 100px;
+}
+
+
 
 /*Button styling*/
 
-.button {
+button {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 	background-color:#ffffff;
@@ -36,11 +74,11 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
-.button:hover {
+button:hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	background-color:#f6f6f6;
 }
-.button:active {
+button:active {
 	position:relative;
 	top:1px;
 }
